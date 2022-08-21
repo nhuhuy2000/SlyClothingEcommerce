@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Register</title>
+
+
+
+   
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   
+         <link rel="stylesheet" th:href="@{/css/product/page_product.css}" type="text/css">
+	<link rel="stylesheet" th:href="@{/richtext/richtext.min.css}">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h4>Thêm sản phẩm</h4>
+        <button></button>
+        <div class="profile">
+
+            <img src="https://picsum.photos/200/200" alt="" class="profile-image">
+            <span class="profile-name btn btn-outline-success" sec:authorize="isAuthenticated()">Xin chào, <span
+                    sec:authentication="principal.name"></span></span>
+            <div class="dropdown-content ">
+                <a href="#" id="logoutLink" style="width : 100px; height: 30px" class="btn btn-outline-danger">Đăng
+                    xuất</a>
+            </div>
+        </div>
+
+    </nav>
+    <!-- sidebar -->
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="side-toggle">
+        <span class="fas fa-bars"></span>
+    </label>
+    <!--  -->
+    <div class="sidebar">
+        <div class="sidebar-menu" sec:authorize="hasAuthority('admin')">
+            <span class="fas fa-users">
+            </span>
+            <a th:href="@{/admins/list}">Quản lý tài khoản</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson')">
+            <span class="fas fa-clipboard-list">
+            </span>
+            <a th:href="@{/products}">Quản lý sản phẩm</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAuthority('admin')">
+            <span class="fas fa-credit-card">
+            </span>
+            <a th:href="@{/admins/list}">Quản lý danh mục</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson', 'shipper')">
+            <span class="fas fa-chart-line">
+            </span>
+            <a th:href="@{/admins/list}">Quản lý đơn hàng</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson')">
+            <span class="fas fa-id-card">
+            </span>
+            <a th:href="@{/admins/list}">Thống kê báo cáo</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson')">
+            <span class="fas fa-cog">
+            </span>
+            <p>Cấu hình</p>
+        </div>
+
+    </div>
+    <!-- main dashboard -->
+    <div class="container">
+        <div>
+            <h2>Manage Products | Create Product</h2>
+        </div>
+        <form th:action="@{/products/save}" method="post"  style="max-width : 1200px; margin: 0 auto"
+            th:object="${product}" enctype="multipart/form-data" novalidate  >
+            <input type="hidden" th:field="*{id}">
+            <input type="hidden" required />
+            <!-- Nav tabs -->
+            <div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active"  data-toggle="tab" href="#overview" role="tab"
+                       >Thông tin chính</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  data-toggle="tab" href="#description" role="tab"
+                        >Nội dung</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  data-toggle="tab" href="#images" role="tab"
+                      >Ảnh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  data-toggle="tab" href="#details" role="tab"
+                       >Thông tin chi tiết</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active p-3" id="overview" role="tabpanel" >
+                	<div class="form-group row">
+                		<label class="col-sm-2 col-form-label">Tên sản phẩm:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" th:field="*{name}" required minlength="3" maxlength="256">
+                        </div>
+                    </div>
+                	<div class="form-group row">
+                		<label class="col-sm-2 col-form-label">Tên phụ:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" th:field="*{alias}" required minlength="3" maxlength="256">
+                        </div>
+                    </div>
+                	<div class="form-group row">
+                		<label class="col-sm-2 col-form-label">Hãng:</label>
+                        <div class="col-sm-10">
+                           <select th:field="*{brand}" class="form-control" required>
+                               <th:block th:each="brand : ${listBrands}">
+                                    <option th:value="${brand.id}">
+                                        [[${brand.name}]]
+                                    </option>
+                               </th:block> 
+                           </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                		<label class="col-sm-2 col-form-label">Thể loại:</label>
+                        <div class="col-sm-10">
+                           <select th:field="*{category}" class="form-control" required>
+                               
+                           </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                		<label class="col-sm-2 col-form-label">Trạng thái:</label>
+                        <div class="col-sm-10">
+                           <input type="checkbox" th:field="*{enabled}">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                		<label class="col-sm-2 col-form-label">Chi phí:</label>
+                        <div class="col-sm-10">
+                           <input type="text" th:field="*{cost}">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                		<label class="col-sm-2 col-form-label">Giá:</label>
+                        <div class="col-sm-10">
+                           <input type="text" th:field="*{price}">
+                        </div>
+                    </div>
+                    
+              
+                   
+                </div>
+                <div class="tab-pane m-2" id="description" role="tabpanel" >
+                <div>
+                	<label>Miêu tả ngắn gọn</label>
+                	<textarea class="form-control" th:field="*{shortDescription}" rows="5" required>
+ 						               	
+                	</textarea>
+                </div>
+                 <div>
+                	<label>Miêu tả đầy đủ</label>
+                	<textarea class="form-control" th:field="*{fullDescription}" rows="10" required>
+ 						               	
+                	</textarea>
+                </div>
+                </div>
+                <div class="tab-pane" id="images" role="tabpanel" >
+                	<div class="row" id="divProductImages">
+                		<div class="col border m-3 p-2">
+                			<div>
+                			<label>Ảnh chính:</label>
+                			<div class="m-2">
+                		<img id="thumbnail" alt="Main image preview" style="width: 300px" class="img-fluid"
+                		th:src="@{${product.mainImagePath}}">
+                			</div>
+                				<div>
+                		<input type="file" id="fileImage" name="fileImage" required>
+                	</div>
+                			</div>
+                		</div>
+                		
+                		<div class="col border m-3 p-2"  id="divExtraImage0">
+                			<div id="extraImageHeader0">
+                			<label>Ảnh phụ #1:</label>
+                			<div class="m-2">
+                		<img id="extraThumbnail0" alt="Extra image #1 preview" style="width: 300px" class="img-fluid"
+                		th:src="@{/images/thumbnail.png}">
+                			</div>
+                				<div>
+                		<input type="file" accept="image/png, image/jpeg" name="extraImage" >
+                	</div>
+                			</div>
+                		</div>
+                	</div>
+                
+                	
+                </div>
+                <div class="tab-pane p-3" id="details" role="tabpanel">
+                <div id="divProductDetails">
+                
+                	<div class="form-inline" id="divDetail0">
+                		<label class="m-3">Name:</label>
+                		<input type="text" class="form-control w-25" name="detailNames" maxlength="255">
+                		<label class="m-3">Value:</label>
+                		<input type="text" class="form-control w-25" name="detailValues" maxlength="255">
+                	</div>
+                </div>
+                	<div>
+                		<input type="button" class="btn btn-secondary" value="Thêm chi tiết"
+                		onclick="addNextDetailSection()"
+                		>
+                	</div>
+                </div>
+            </div>
+             <input type="submit" value="Lưu" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" ></script>
+  <script th:src="@{/js/common.js}" type="text/javascript"></script>
+<script th:src="@{/js/product_form.js}" type="text/javascript"></script>
+<script th:src="@{/richtext/jquery.richtext.min.js}"></script>
+<script type="text/javascript">
+   	moduleURL = "[[@{/products}]]";
+   	brandModuleURL = "[[@{/brands}]]";
+   	dropdownBrands = $("#brand");
+   	dropdownCategories = $("#category");
+   	defaultImageThumbnailSrc = "[[@{/images/thumbnail.png}]]";
+    $(document).ready(function(){
+    	dropdownBrands.change(function(){
+    		dropdownCategories.empty();
+    		getCategories();
+    	})
+    //$('#myTab a').on('click', function (e) {
+    //	  e.preventDefault()
+    //	  console.log("show me")
+    //	  $(this).tab('show')
+    //	})
+   // })
+   $("#shortDescription").richText();
+    $("#fullDescription").richText();
+   })
+   function getCategories(){
+	   brandId = dropdownBrands.val();
+	   url = brandModuleURL + "/" + brandId + "/categories";
+	   
+	   $.get(url, function(responseJson){
+		   $.each(responseJson, function(index, category){
+			   $("<option>").val(category.id).text(category.name).appendTo(dropdownCategories);
+		   })
+	   })
+	   alert(url);
+   }
+</script>
+
+		
+</body>
+
+</html>

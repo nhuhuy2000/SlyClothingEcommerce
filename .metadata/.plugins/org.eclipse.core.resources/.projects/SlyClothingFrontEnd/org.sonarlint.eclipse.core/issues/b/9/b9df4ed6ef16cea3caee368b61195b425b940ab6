@@ -1,0 +1,14 @@
+
+q
+java:S2184O"@Cast one of the operands of this addition operation to a "long".(øÑ”ãüÿÿÿÿ8ï¨÷¥…0HØPRMINORZBUG
+€
+java:S11923"JDefine a constant instead of duplicating this literal "pageTitle" 3 times.(³ñ¸ï8šŒþ¥…0HÙPRCRITICALZ
+CODE_SMELL
+l
+java:S2184%"@Cast one of the operands of this addition operation to a "long".(°Ú„Ï8„äžƒ…0HÝPRMINORZBUG
+d
+java:S1135F"2Complete the task associated to this TODO comment.(‡ñÅ¼8õ“¢ž…0HÞPRINFOZ
+CODE_SMELL
+d
+java:S11356"2Complete the task associated to this TODO comment.(‡ñÅ¼8ªÄÉž…0HßPRINFOZ
+CODE_SMELL

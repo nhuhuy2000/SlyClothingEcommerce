@@ -1,0 +1,9 @@
+
+
+java:S3655#"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Ñ«šÓıÿÿÿÿ8´÷‹0HÄ"RMAJORZBUG
+_
+java:S1905"'Remove this unnecessary cast to "List".(ÔûÈ—úÿÿÿÿ8´÷‹0HÂ"RMINORZ
+CODE_SMELL
+t
+java:S1128"<Remove this unused import 'javax.transaction.Transactional'.(ûÒçÑúÿÿÿÿ8´÷‹0HÅ"RMINORZ
+CODE_SMELL

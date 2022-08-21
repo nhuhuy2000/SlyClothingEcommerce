@@ -1,0 +1,28 @@
+
+‘
+java:S2293n"YReplace the type specification in this constructor call with the diamond operator ("<>").(à™þúÿÿÿÿ8½ÒÓüþ/HÉ=RMINORZ
+CODE_SMELL
+È
+java:S44492"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(ëßøÿÿÿÿ8³íûÖþ/HË=RMAJORZ
+CODE_SMELL
+g
+java:S1481".Remove this unused "listUsers" local variable.(Ã‘øÈúÿÿÿÿ8¹Õ•€0HÓ=RMINORZ
+CODE_SMELL
+v
+java:S1854"=Remove this useless assignment to local variable "listUsers".(Ã‘øÈúÿÿÿÿ8¹Õ•€0HÈ=RMAJORZ
+CODE_SMELL
+ƒ
+java:S1192>"HDefine a constant instead of duplicating this literal "message" 4 times.(ÇË¦èøÿÿÿÿ8§˜Äüþ/HÎ=RCRITICALZ
+CODE_SMELL
+d
+java:S1135M"2Complete the task associated to this TODO comment.(‡ñÅ¼8’Ú›üþ/HÁ=RINFOZ
+CODE_SMELL
+l
+java:S2184i"@Cast one of the operands of this addition operation to a "long".(úé—´8½ÒÓüþ/HÍ=RMINORZBUG
+s	java:S125e"<This block of commented-out lines of code should be removed.(ý»é“ÿÿÿÿÿ8½ÒÓüþ/HÄ=RMAJORZ
+CODE_SMELL
+È
+java:S1130T"Remove the declaration of thrown exception 'com.slyclothing.admin.exception.AdminNotFoundException', as it cannot be thrown from method's body.(ßÌë…ùÿÿÿÿ8§˜Äüþ/HÂ=RMINORZ
+CODE_SMELL
+x
+java:S4684/"@Replace this persistent entity with a simple POJO or DTO object.(÷ÚŽ$8³íûÖþ/HÀ=RCRITICALZVULNERABILITY

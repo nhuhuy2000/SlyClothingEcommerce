@@ -1,0 +1,7 @@
+
+j	java:S106'"9Replace this use of System.out or System.err by a logger.(Úü¯u8¿¯Ý½…0Hù3RMAJORZ
+CODE_SMELL
+\
+java:S5960!"+Remove this assertion from production code.(Ï³€Öùÿÿÿÿ8ß™ù¨…0Hø3RMAJORZBUG
+s	java:S125"<This block of commented-out lines of code should be removed.(¯¿ûåúÿÿÿÿ8ß™ù¨…0H÷3RMAJORZ
+CODE_SMELL

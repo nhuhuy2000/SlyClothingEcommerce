@@ -1,0 +1,9 @@
+.thumbnail{
+    opacity: 0.5;
+}
+.thumbnail:hover{
+    opacity: 1;
+}
+.active{
+    opacity: 1;
+}

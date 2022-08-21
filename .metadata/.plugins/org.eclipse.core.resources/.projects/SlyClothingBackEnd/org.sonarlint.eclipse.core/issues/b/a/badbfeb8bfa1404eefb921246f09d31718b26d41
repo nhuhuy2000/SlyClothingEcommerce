@@ -1,0 +1,9 @@
+
+|
+java:S3655."PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ŒÀË‘8ùÉúÑ…0H´4RMAJORZBUG
+p	java:S106%"9Replace this use of System.out or System.err by a logger.(‘½ó²şÿÿÿÿ8·ëÏĞ…0H™4RMAJORZ
+CODE_SMELL
+|
+java:S36558"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ŒÀË‘8‹³àÑ…0H4RMAJORZBUG
+W
+java:S5960"+Remove this assertion from production code.(ÀÚß‡8Ôû§Ğ…0H•4RMAJORZBUG

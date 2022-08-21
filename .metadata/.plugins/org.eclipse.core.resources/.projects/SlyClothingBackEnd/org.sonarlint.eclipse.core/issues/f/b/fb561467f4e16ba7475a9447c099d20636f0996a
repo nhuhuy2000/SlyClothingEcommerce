@@ -1,0 +1,11 @@
+
+YWeb:BoldAndItalicTagsCheckh"Replace this <i> tag by <em>.(¬Ø•ş8Îúæ†0H¢?RMINORZBUG
+_Web:AvoidCommentedOutCodeCheck)"Remove this commented out code.(íŠúHÕ=RMAJORZ
+CODE_SMELL
+ZWeb:BoldAndItalicTagsCheck¢"Replace this <i> tag by <em>.(çîïÛ8£—º¨†0H¬?RMINORZBUG
+YWeb:BoldAndItalicTagsCheck¡"Replace this <i> tag by <em>.(õØÉp8£—º¨†0H«?RMINORZBUG
+{	Web:S5255"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(êÊÛÚÿÿÿÿÿ8£—º¨†0H­?RMAJORZ
+CODE_SMELL
+]Web:TableWithoutCaptionCheck" Add a description to this table.(¿‰˜ÿÿÿÿÿHÙ=RMINORZBUG
+O	Web:S5256"%Add "<th>" headers to this "<table>".(¿‰˜ÿÿÿÿÿHÖ=RMAJORZBUG
+WWeb:BoldAndItalicTagsChecko"Replace this <i> tag by <em>.(¼˜ËÓøÿÿÿÿHÛ=RMINORZBUG

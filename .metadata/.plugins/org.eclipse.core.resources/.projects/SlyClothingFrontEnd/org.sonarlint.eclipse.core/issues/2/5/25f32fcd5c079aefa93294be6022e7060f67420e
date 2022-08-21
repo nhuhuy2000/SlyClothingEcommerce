@@ -1,0 +1,12 @@
+
+r
+java:S2259"FA "NullPointerException" could be thrown; "category" is nullable here.(¦½ìÁ8à£…0HĞ0RMAJORZBUG
+b
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8ı¥³ù„0HÓ0RMINORZ
+CODE_SMELL
+ 
+java:S1488"mImmediately return this expression instead of assigning it to the temporary variable "listEnabledCategories".(™Ğ²õ8ı¥³ù„0HÕ0RMINORZ
+CODE_SMELL
+o
+java:S1128"<Remove this unused import 'net.bytebuddy.asm.Advice.Return'.(ş„‹¢8à£…0HØ0RMINORZ
+CODE_SMELL

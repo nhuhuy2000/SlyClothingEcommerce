@@ -1,0 +1,9 @@
+
+N	Web:S5256m"%Add "<th>" headers to this "<table>".(¿‰˜ÿÿÿÿÿH˜RMAJORZBUG
+d	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(ñúºH”RMAJORZBUG
+WWeb:BoldAndItalicTagsCheck]"Replace this <i> tag by <em>.(¼˜ËÓøÿÿÿÿH–RMINORZBUG
+RWeb:BoldAndItalicTagsCheck~"Replace this <i> tag by <em>.(Ùâã¶HšRMINORZBUG
+RWeb:BoldAndItalicTagsCheck}"Replace this <i> tag by <em>.(³êšŞH™RMINORZBUG
+_Web:AvoidCommentedOutCodeCheck"Remove this commented out code.(íŠúH•RMAJORZ
+CODE_SMELL
+\Web:TableWithoutCaptionCheckm" Add a description to this table.(¿‰˜ÿÿÿÿÿH—RMINORZBUG

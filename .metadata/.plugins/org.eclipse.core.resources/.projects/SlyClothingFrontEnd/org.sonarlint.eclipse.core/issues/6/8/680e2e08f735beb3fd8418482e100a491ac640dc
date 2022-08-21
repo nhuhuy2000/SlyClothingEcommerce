@@ -1,0 +1,12 @@
+
+n	java:S125"<This block of commented-out lines of code should be removed.(ç«ÛÃ8†´Ùè„0HÛ.RMAJORZ
+CODE_SMELL
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†´Ùè„0Há.RMINORZ
+CODE_SMELL
+j
+java:S1128"7Remove this unused import 'org.junit.jupiter.api.Test'.(Öºˆß8†´Ùè„0Hã.RMINORZ
+CODE_SMELL
+{
+java:S1128"CRemove this unused import 'com.slyclothing.common.entity.Category'.(·£•øÿÿÿÿ8†´Ùè„0Hå.RMINORZ
+CODE_SMELL

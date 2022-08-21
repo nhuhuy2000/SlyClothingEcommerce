@@ -1,0 +1,16 @@
+
+ƒ
+java:S5361$"HReplace this call to "replaceAll()" by a call to the "replace()" method.(«Ãõıÿÿÿÿ8ƒ¼‹•ƒ0HùZRCRITICALZ
+CODE_SMELL
+
+java:S3655G"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Àèä¾úÿÿÿÿ8‰‘Çƒ0HúZRMAJORZBUG
+ƒ
+java:S5361'"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Áş´œşÿÿÿÿ8ƒ¼‹•ƒ0HûZRCRITICALZ
+CODE_SMELL
+d
+java:S1135I"2Complete the task associated to this TODO comment.(‡ñÅ¼8‰‘Çƒ0HüZRINFOZ
+CODE_SMELL
+
+java:S3655`"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(›ØÇüÿÿÿÿ8ü¶Ï„0HıZRMAJORZBUG
+m
+java:S49733"<Strings and Boxed types should be compared using "equals()".(¾¾Š“ıÿÿÿÿ8ºÌ²•ƒ0HşZRMAJORZBUG

@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#header-main {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    
+}
+li{
+    list-style: none;
+}
+.li-submenu a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    flex: 1;
+}
+.logo img {
+    height: 70px;
+}
+.menu{
+    flex: 3;
+    display: flex;
+    position: relative;
+}
+.menu > li{
+    padding: 0 12px;
+}
+.menu > li a{
+    font-size: 16px;
+    font-weight: bold;
+}
+.others{
+    flex: 1;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+.others > li{
+    padding: 0 12px;
+    
+}
+.others > li:first-child{
+    position: relative;
+}
+.others > li:first-child input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    height: 31px;
+}
+.others > li:first-child svg{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+}
+
+.mega-box{
+    position: absolute;
+    top:70px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.mega-box .content{
+    background-color: #6fb3f7;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+}
+.content .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content .row header{
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content .row:nth-child(1),
+.content .row:nth-child(2){
+    border-left: 0px;
+}
+.content .row .mega-links{
+    margin-left: -40px;
+    border-left: 1px solid rgba(255,255,255,0.9);
+}
+.row .mega-links li{
+    padding: 0 20px;
+}
+.row .mega-links li a{
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+}
+.active-hover{
+    color:  orange;
+}
+.show-submenu{
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 20px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+/* ------------ */
+.hero-slider{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.hero-slider .carousel-cell{
+    width: 100%;
+    height: 100%;
+  
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+.hero-slider .carousel-cell .inner{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+.hero-slider .carousel-cell .inner .subtitle{
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom : 5px;
+}
+.hero-slider .carousel-cell .inner .title{
+    font-size: 3rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+.hero-slider .carousel-cell .inner .btn{
+    border: 1px solid #fff;
+    padding: 14px 18px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.hero-slider .carousel-cell .inner .btn:hover{
+    background: #fff;
+    color: #000;
+}
+.hero-slider .flickity-prev-next-button{
+    width: 80px;
+    height: 80px;
+    background: transparent;
+}
+.hero-slider .flickity-prev-next-button:hover{
+    background: transparent;
+}
+.hero-slider .flickity-prev-next-button .arrow{
+    fill: white;
+}
+.hero-slider .flickity-page-dots{
+    bottom: 30px;
+}
+.hero-slider .flickity-page-dots .dot{
+    width: 30px;
+    height: 4px;
+    opacity: 1;
+    background: rgba(255,255,255,0.5);
+    border: 0 solid white;
+    border-radius: 0;
+}
+.hero-slider .flickity-page-dots .dot.is-selected{
+    background: #f00;
+    border: 0 solid #f00;
+}
+/* ------------ */
+/* Start footer */
+   
+/* End footer */

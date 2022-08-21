@@ -1,0 +1,45 @@
+
+‰
+java:S1192"SDefine a constant instead of duplicating this literal "../product-images/" 3 times.(ÍöåÁ8ş©ŒÔ„0HãZRCRITICALZ
+CODE_SMELL
+i
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8åËïÑ„0HçZRINFOZ
+CODE_SMELL
+y
+java:S3457("AFormat specifiers should be used instead of string concatenation.(‡Ã‘ıÿÿÿÿ8åËïÑ„0HèZRMAJORZ
+CODE_SMELL
+y
+java:S3457"AFormat specifiers should be used instead of string concatenation.(÷Ã·øùÿÿÿÿ8åËïÑ„0HéZRMAJORZ
+CODE_SMELL
+w
+java:S2095"DUse try-with-resources or close this "Stream" in a "finally" clause.(óÒ³½úÿÿÿÿ8åËïÑ„0HêZRBLOCKERZBUG
+È
+java:S4449_"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(ëßøÿÿÿÿ8ş©ŒÔ„0HëZRMAJORZ
+CODE_SMELL
+m
+java:S1118":Add a private constructor to hide the implicit public one.(ßúêÑ8ş©ŒÔ„0HíZRMAJORZ
+CODE_SMELL
+d
+java:S1135!"2Complete the task associated to this TODO comment.(‡ñÅ¼8åËïÑ„0HîZRINFOZ
+CODE_SMELL
+È
+java:S4449V"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(ëßøÿÿÿÿ8ş©ŒÔ„0HïZRMAJORZ
+CODE_SMELL
+y
+java:S3457""AFormat specifiers should be used instead of string concatenation.(¨Í”öüÿÿÿÿ8åËïÑ„0HñZRMAJORZ
+CODE_SMELL
+Ã
+java:S4449I"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(öÓ™Ô8ş©ŒÔ„0HòZRMAJORZ
+CODE_SMELL
+i
+java:S1135,"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ş©ŒÔ„0HôZRINFOZ
+CODE_SMELL
+i
+java:S1135G"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ş©ŒÔ„0HõZRINFOZ
+CODE_SMELL
+d
+java:S1135'"2Complete the task associated to this TODO comment.(‡ñÅ¼8åËïÑ„0HöZRINFOZ
+CODE_SMELL
+Ã
+java:S4449i"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(öÓ™Ô8ş©ŒÔ„0H÷ZRMAJORZ
+CODE_SMELL

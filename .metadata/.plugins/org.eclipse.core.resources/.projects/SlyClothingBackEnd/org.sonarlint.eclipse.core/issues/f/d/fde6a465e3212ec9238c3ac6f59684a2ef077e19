@@ -1,0 +1,18 @@
+
+\
+java:S5960("+Remove this assertion from production code.(…Õœ¤øÿÿÿÿ8½ˆòä0H–RMAJORZBUG
+À
+java:S4449G"ŒAnnotate the parameter with @javax.annotation.Nullable in method 'delete' declaration, or make sure that null can not be passed as argument.(û‰ß¡8Ò¦œæ0HRMAJORZ
+CODE_SMELL
+p	java:S1068"9Replace this use of System.out or System.err by a logger.(Ø¦ˆŞúÿÿÿÿ8Ô•å0H“RMAJORZ
+CODE_SMELL
+|
+java:S36557"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(›ûàŠ8Å‹’å0H•RMAJORZBUG
+p	java:S1061"9Replace this use of System.out or System.err by a logger.(ó‰¾íùÿÿÿÿ8Æéˆå0H‘RMAJORZ
+CODE_SMELL
+{
+java:S3655>"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ô‡‚H8“Õ·å0H’RMAJORZBUG
+
+java:S3655Y"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¿Ç—øÿÿÿÿ8“„¤ªƒ0H”RMAJORZBUG
+
+java:S3655M"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¿Ç—øÿÿÿÿ8‹óßÅƒ0H³RMAJORZBUG

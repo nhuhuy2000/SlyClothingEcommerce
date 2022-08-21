@@ -1,0 +1,15 @@
+
+n	java:S125:"<This block of commented-out lines of code should be removed.(Èí¸Ò8¥ª„Ç†0Hí?RMAJORZ
+CODE_SMELL
+±
+java:S4601("sReorder the URL patterns from most to less specific, the pattern "/admins/order" should occurs before "/admins/**".(¢¶”²ùÿÿÿÿ8¥ª„Ç†0Hé?RCRITICALZVULNERABILITY
+¬
+java:S4601)"sReorder the URL patterns from most to less specific, the pattern "/admins/login" should occurs before "/admins/**".(¯ôç‰8¥ª„Ç†0Hë?RCRITICALZVULNERABILITY
+
+java:S1192'"FDefine a constant instead of duplicating this literal "admin" 4 times.(å÷÷ûÿÿÿÿ8¥ª„Ç†0Hğ?RCRITICALZ
+CODE_SMELL
+x	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(ı³ÌØ8ØÑÄÕş/Hå?RMAJORZ
+CODE_SMELL
+Ÿ
+java:S1130!"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ı³ÌØ8ØÑÄÕş/Hæ?RMINORZ
+CODE_SMELL

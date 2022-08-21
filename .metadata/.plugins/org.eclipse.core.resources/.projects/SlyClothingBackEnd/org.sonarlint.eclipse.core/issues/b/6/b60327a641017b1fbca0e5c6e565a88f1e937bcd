@@ -1,0 +1,15 @@
+
+È
+java:S4449/"Annotate the parameter with @javax.annotation.Nullable in method 'cleanPath' declaration, or make sure that null can not be passed as argument.(ëßøÿÿÿÿ8ãÇıŒ0HºRMAJORZ
+CODE_SMELL
+~
+java:S1192:"HDefine a constant instead of duplicating this literal "message" 4 times.(±²Ó§8ãÇıŒ0HÁRCRITICALZ
+CODE_SMELL
+d
+java:S1135Y"2Complete the task associated to this TODO comment.(‡ñÅ¼8ãÇıŒ0HÆRINFOZ
+CODE_SMELL
+y
+java:S4684,"@Replace this persistent entity with a simple POJO or DTO object.(àûºù8ãÇıŒ0HÀRCRITICALZVULNERABILITY
+Œ
+java:S1192<"QDefine a constant instead of duplicating this literal "redirect:/brands" 3 times.(ß‚»Çùÿÿÿÿ8ãÇıŒ0H¼RCRITICALZ
+CODE_SMELL

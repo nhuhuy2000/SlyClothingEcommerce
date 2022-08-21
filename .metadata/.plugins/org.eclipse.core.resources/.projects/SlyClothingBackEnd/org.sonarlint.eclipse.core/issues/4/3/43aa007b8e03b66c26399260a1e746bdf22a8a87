@@ -1,0 +1,24 @@
+
+n	java:S125,"<This block of commented-out lines of code should be removed.(û¡ô·8ñ‹ÃŒþ/HÞ>RMAJORZ
+CODE_SMELL
+|
+java:S3655f"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Ð‚ê˜8–ÐâŒþ/Hß>RMAJORZBUG
+h
+java:S4973Z"<Strings and Boxed types should be compared using "equals()".(£ï¸Ü8óë˜„ÿ/Hà>RMAJORZBUG
+{
+java:S3655D"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ûá˜h8ñ‹ÃŒþ/Hå>RMAJORZBUG
+_
+java:S1905;"'Remove this unnecessary cast to "List".(´®µ©ûÿÿÿÿ8ñ‹ÃŒþ/Hæ>RMINORZ
+CODE_SMELL
+
+java:S3655&"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Æï¦Íøÿÿÿÿ8ñ‹ÃŒþ/Hè>RMAJORZBUG
+n	java:S1254"<This block of commented-out lines of code should be removed.(û¡ô·8ñ‹ÃŒþ/Hé>RMAJORZ
+CODE_SMELL
+j
+java:S2589W"7Remove this expression which always evaluates to "true"(ÿê“æ8óë˜„ÿ/Hê>RMAJORZ
+CODE_SMELL
+n	java:S1250"<This block of commented-out lines of code should be removed.(û¡ô·8ñ‹ÃŒþ/Hî>RMAJORZ
+CODE_SMELL
+Z
+java:S19058"'Remove this unnecessary cast to "List".(çÖæ£8ñ‹ÃŒþ/Hï>RMINORZ
+CODE_SMELL

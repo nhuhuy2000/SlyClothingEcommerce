@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Page Admin</title>
+<link rel="stylesheet" href="../static/css/page_admin.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<!--navbar-->
+	<nav class="navbar">
+		<h4>Dashboard</h4>
+		<div class="profile">
+		
+			<img src="https://picsum.photos/200/200" alt="" class="profile-image">
+			<p class="profile-name">Lorem ipsum</p>
+		</div>
+	</nav>
+	<!-- sidebar -->
+	<input type="checkbox" id="toggle">
+	<label for="toggle" class="side-toggle">
+		<span class="fas fa-bars"></span>
+	</label>
+
+	<div class="sidebar">
+		<div class="sidebar-menu">
+			<span class="fas fa-clipboard-list">
+			</span>
+			<p>Overview</p>
+		</div>
+		<div class="sidebar-menu">
+			<span class="fas fa-users">
+			</span>
+			<p>Teams</p>
+		</div>
+		<div class="sidebar-menu">
+			<span class="fas fa-credit-card">
+			</span>
+			<p>Payment</p>
+		</div>
+		<div class="sidebar-menu">
+			<span class="fas fa-chart-line">
+			</span>
+			<p>Statistic</p>
+		</div>
+		<div class="sidebar-menu">
+			<span class="fas fa-id-card">
+			</span>
+			<p>Contact</p>
+		</div>
+		<div class="sidebar-menu">
+			<span class="fas fa-cog">
+			</span>
+			<p>Setting</p>
+		</div>
+
+	</div>
+	<!-- main dashboard -->
+	<main>
+		<div class="dashboard-container">
+			<!--4 cards top-->
+			<div class="card total-1">
+				<div class="info">
+					<div class="info-detail">
+						<h3>Revenue</h3>
+						<p>Lorem ipsum dolor</p>
+						<h2>1,873,250<span>USD</span></h2>
+					</div>
+					<div class="info-image">
+						<i class="fas fa-money-check-alt"></i>
+					</div>
+				</div>
+			</div>
+			<div class="card total-2">
+				<div class="info">
+					<div class="info-detail">
+						<h3>Total Orders</h3>
+						<p>Lorem ipsum dolor</p>
+						<h2>10,890<span>Orders</span></h2>
+					</div>
+					<div class="info-image">
+						<i class="fas fa-boxes"></i>
+					</div>
+				</div>
+			</div>
+			<div class="card total-3">
+				<div class="info">
+					<div class="info-detail">
+						<h3>Customers</h3>
+						<p>Lorem ipsum dolor</p>
+						<h2>340<span>Companies</span></h2>
+					</div>
+					<div class="info-image">
+						<i class="fas fa-user-friends"></i>
+					</div>
+				</div>
+			</div>
+			<div class="card total-4">
+				<div class="info">
+					<div class="info-detail">
+						<h3>Daily Orders</h3>
+						<p>Lorem ipsum dolor</p>
+						<h2>56<span>Orders</span></h2>
+					</div>
+					<div class="info-image">
+						<i class="fas fa-shipping-fast"></i>
+					</div>
+				</div>
+			</div>
+			<!--2 card bottom-->
+			<div class="card detail">
+				<div class="detail-header">
+					<h2>All Orders</h2>
+					<button>See More</button>
+				</div>
+				<table>
+					<tr>
+						<th>Order #</th>
+						<th>Company Name</th>
+						<th>Status</th>
+						<th>Total</th>
+						<th>Created</th>
+						<th>Last Updated</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td>#PW-0001</td>
+						<td>Potencial Corp</td>
+						<td>
+							<span class="status onprogress">
+								<i class="fas fa-circle"></i>
+							ONPROGESS</span>
+						</td>
+						<td>3,149.19USD</td>
+						<td>Apr 11, 2021</td>
+						<td>Today</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+					<tr>
+						<td>#PW-0002</td>
+						<td>Webcode inc</td>
+						<td>
+							<span class="status confirmed">
+								<i class="fas fa-circle"></i>
+							CONFIRMED
+							</span>
+						</td>
+						<td>830.78USD</td>
+						<td>Mar 29, 2021</td>
+						<td>Yesterday</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+					<tr>
+						<td>#PW-0003</td>
+						<td>Coding Time</td>
+						<td>
+							<span class="status fulfilled">
+								<i class="fas fa-circle"></i>
+							FULFILLED
+							</span>
+						</td>
+						<td>928.81 USD</td>
+						<td>Mar 29, 2020</td>
+						<td>Feb 21, 2021</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+
+					</tr>
+					<tr>
+						<td>#PW-0001</td>
+						<td>Potencial Corp</td>
+						<td>
+							<span class="status onprogress">
+								<i class="fas fa-circle"></i>
+							ONPROGESS</span>
+						</td>
+						<td>3,149.19USD</td>
+						<td>Apr 11, 2021</td>
+						<td>Today</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+					<tr>
+						<td>#PW-0002</td>
+						<td>Webcode inc</td>
+						<td>
+							<span class="status confirmed">
+								<i class="fas fa-circle"></i>
+							CONFIRMED
+							</span>
+						</td>
+						<td>830.78USD</td>
+						<td>Mar 29, 2021</td>
+						<td>Yesterday</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+					<tr>
+						<td>#PW-0003</td>
+						<td>Coding Time</td>
+						<td>
+							<span class="status fulfilled">
+								<i class="fas fa-circle"></i>
+							FULFILLED
+							</span>
+						</td>
+						<td>928.81 USD</td>
+						<td>Mar 29, 2020</td>
+						<td>Feb 21, 2021</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+					<tr>
+						<td>#PW-0001</td>
+						<td>Potencial Corp</td>
+						<td>
+							<span class="status onprogress">
+								<i class="fas fa-circle"></i>
+							ONPROGESS</span>
+						</td>
+						<td>3,149.19USD</td>
+						<td>Apr 11, 2021</td>
+						<td>Today</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+					<tr>
+						<td>#PW-0002</td>
+						<td>Webcode inc</td>
+						<td>
+							<span class="status confirmed">
+								<i class="fas fa-circle"></i>
+							CONFIRMED
+							</span>
+						</td>
+						<td>830.78USD</td>
+						<td>Mar 29, 2021</td>
+						<td>Yesterday</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+					<tr>
+						<td>#PW-0003</td>
+						<td>Coding Time</td>
+						<td>
+							<span class="status fulfilled">
+								<i class="fas fa-circle"></i>
+							FULFILLED
+							</span>
+						</td>
+						<td>928.81 USD</td>
+						<td>Mar 29, 2020</td>
+						<td>Feb 21, 2021</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="card customer">
+				<div class="detail-header">
+					<h2>New Customer</h2>
+					<button>See More</button>
+				</div>
+				<table>
+					<tr>
+						<th>Profile</th>
+						<th>Name</th>
+						<th>Option</th>
+					</tr>
+					<tr>
+						<td>#PW-0001</td>
+						<td>Potencial Corp</td>
+						<td><a href="#" class="btn-detail">Detail</a></td>
+					
+					</tr>
+					
+				</table>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

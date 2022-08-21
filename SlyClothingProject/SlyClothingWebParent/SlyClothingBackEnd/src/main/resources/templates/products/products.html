@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Product</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	 <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" ></script>
+	
+    <link rel="stylesheet" th:href="@{/css/page_admin.css}" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--navbar-->
+     <nav class="navbar">
+        <h4>Trang quản trị viên</h4>
+		<button></button>
+        <div class="profile">
+
+            <img src="https://picsum.photos/200/200" alt="" class="profile-image">
+           <span class="profile-name btn btn-outline-success" sec:authorize="isAuthenticated()">Xin chào, <span sec:authentication="principal.name" ></span></span> 
+           <div class="dropdown-content ">
+           <a href="#" id="logoutLink" style="width : 100px; height: 30px" class="btn btn-outline-danger">Đăng xuất</a>
+           </div>
+        </div>
+        
+    </nav>
+    <!-- <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div class="search">
+                    <i class="far fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="profile">
+                <i class="far fa-bell"></i>
+                <img src="https://picsum.photos/200/200" alt="">
+            </div>
+        </div>
+    </section> -->
+    <!-- sidebar -->
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="side-toggle">
+        <span class="fas fa-bars"></span>
+    </label>
+    <!--  -->
+    <div class="sidebar">
+        <div class="sidebar-menu" sec:authorize="hasAuthority('admin')">
+            <span class="fas fa-users">
+            </span>
+            <a th:href="@{/admins/list}" >Quản lý tài khoản</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson')">
+            <span class="fas fa-clipboard-list">
+            </span>
+            <a th:href="@{/products}">Quản lý sản phẩm</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAuthority('admin')">
+            <span class="fas fa-credit-card">
+            </span>
+            <a th:href="@{/admins/list}">Quản lý danh mục</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson', 'shipper')">
+            <span class="fas fa-chart-line">
+            </span>
+           <a th:href="@{/admins/list}">Quản lý đơn hàng</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson')">
+            <span class="fas fa-id-card">
+            </span>
+           <a th:href="@{/admins/list}">Thống kê báo cáo</a>
+        </div>
+        <div class="sidebar-menu" sec:authorize="hasAnyAuthority('admin','saleperson')">
+            <span class="fas fa-cog">
+            </span>
+            <p>Cấu hình</p>
+        </div>
+
+    </div>
+    <!-- main dashboard -->
+    <!-- search form  -->
+    <div class="search">
+        <input type="text" class="search-input" placeholder="Search....">
+        <button class="search-btn">Search</button>
+    </div>
+    <!-- // -->
+    <!-- start dropdown -->
+    <div class="dropdown">
+        <div class="dropdown-select">
+            <span class="select">Selected item:</span>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="dropdown-list">
+            <a class="dropdown-list__item" href="#">Option 1</a>
+            <a class="dropdown-list__item" href="#">Option 1</a>
+            <a class="dropdown-list__item" href="#">Option 1</a>
+            <a class="dropdown-list__item" href="#">Option 1</a>
+            <a class="dropdown-list__item" href="#">Option 1</a>
+
+        </div>
+    </div>
+    <!-- end dropdown -->
+    <!-- start board -->
+    
+    <div class="board">
+    <a th:href="@{/products/new}">Register</a>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Description</td>
+                    <td>Status</td>
+                    <td>Category</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr th:each="product : ${listProducts}">
+                    <td class="people">
+                       
+                        <div class="people-detail">
+                            <h5 th:text="${product.name}"></h5>
+                            <p th:text="${product.brand.name}"></p>
+                        </div>
+                    </td>
+                    <td class="people-des">
+                        <h5 th:text="${product.shortDescription}"></h5>
+                    
+                    </td>
+                    <td class="active">
+                       <a th:if="${product.enabled == true}" th:text="Active"></a>
+                       	<a th:if="${product.enabled == false}" th:text="Not Active"></a>
+                    </td>
+                    <td class="role">
+                        <p th:text="${product.category.name}"></p>
+                    </td>
+                    <td class="edit">
+                        <i class="fa-solid fa-eye"></i><a th:href="@{/products/detail}">Detail</a>
+                    <i class="fa-solid fa-screwdriver-wrench"></i><a th:href>Edit</a>
+                        <i class="fa-solid fa-trash"></i><a href="">Delete</a>
+                    </td>
+                </tr>
+               
+
+            </tbody>
+        </table>
+        <div class="show-text">
+            <span>Show 1 of 4 from 24</span>
+        </div>
+        <div class="pagination-buttons">
+            <button type="button" class="page-btn start-page">start</button>
+            <button type="button" class="page-btn prev-page">prev</button>
+            <button type="button" class="page-btn active">1</button>
+            <button type="button" class="page-btn">2</button>
+            <button type="button" class="page-btn">3</button>
+            <button type="button" class="page-btn">4</button>
+            <button type="button" class="page-btn">5</button>
+            <button type="button" class="page-btn next-page">next</button>
+            <button type="button" class="page-btn end-page">end</button>
+        </div>
+    </div>
+    <!-- end board -->
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+
+n	java:S125!"<This block of commented-out lines of code should be removed.(Àİôº8—‰Ì…0Hæ2RMAJORZ
+CODE_SMELL
+h
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8‘À‰Ì…0HÍ3RMINORZ
+CODE_SMELL
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‘À‰Ì…0HÏ3RMINORZ
+CODE_SMELL
+g
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8‘À‰Ì…0HÑ3RMINORZ
+CODE_SMELL
+u
+java:S1128
+"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8‘À‰Ì…0HÓ3RMINORZ
+CODE_SMELL
+q
+java:S1128"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8‘À‰Ì…0HÕ3RMINORZ
+CODE_SMELL
+s
+java:S1128"ARemove this unused import 'org.springframework.util.StringUtils'.(Ğôÿ8‘À‰Ì…0H×3RMINORZ
+CODE_SMELL
+‚
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8‘À‰Ì…0HÙ3RMINORZ
+CODE_SMELL
+ˆ
+java:S1128"PRemove this unused import 'org.springframework.web.bind.annotation.PostMapping'.(äƒà°ùÿÿÿÿ8‘À‰Ì…0HÛ3RMINORZ
+CODE_SMELL
+‰
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿ8‘À‰Ì…0Hİ3RMINORZ
+CODE_SMELL
+„
+java:S1128"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ8‘À‰Ì…0Hß3RMINORZ
+CODE_SMELL
+
+java:S1128"[Remove this unused import 'org.springframework.web.servlet.mvc.support.RedirectAttributes'.(ìçÚË8‘À‰Ì…0Há3RMINORZ
+CODE_SMELL
+v
+java:S1128"CRemove this unused import 'com.slyclothing.common.entity.Currency'.(úâäœ8‘À‰Ì…0Hã3RMINORZ
+CODE_SMELL
+u
+java:S1128"BRemove this unused import 'com.slyclothing.common.entity.Setting'.(Ä¯àÊ8‘À‰Ì…0Hå3RMINORZ
+CODE_SMELL

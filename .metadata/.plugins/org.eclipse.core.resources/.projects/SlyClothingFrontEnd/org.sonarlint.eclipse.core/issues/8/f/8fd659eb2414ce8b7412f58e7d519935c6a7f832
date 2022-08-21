@@ -1,0 +1,9 @@
+
+p	java:S106 "9Replace this use of System.out or System.err by a logger.(ÞÆ­Ûþÿÿÿÿ8ÍÿÑÌ…0H‡4RMAJORZ
+CODE_SMELL
+z
+java:S1858"G"getRequestURI" returns a string, there's no need to call "toString()".(‘Øì˜8ÍÿÑÌ…0H…4RMINORZ
+CODE_SMELL
+_
+java:S1602"",Remove useless curly braces around statement(·Þ—±8ð²åÌ…0H‹4RMINORZ
+CODE_SMELL

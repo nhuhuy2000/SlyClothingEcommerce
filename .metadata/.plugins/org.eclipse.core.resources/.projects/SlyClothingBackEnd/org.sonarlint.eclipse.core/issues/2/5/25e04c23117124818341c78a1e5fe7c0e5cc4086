@@ -1,0 +1,16 @@
+
+k	java:S1061"9Replace this use of System.out or System.err by a logger.(ÚÚÖ8ÈèÏ‹ş/Hì1RMAJORZ
+CODE_SMELL
+r
+java:S1118":Add a private constructor to hide the implicit public one.(®ñŒ¾ùÿÿÿÿ8ÈèÏ‹ş/Hí1RMAJORZ
+CODE_SMELL
+p	java:S106,"9Replace this use of System.out or System.err by a logger.(ÒéŸúüÿÿÿÿ8ÈèÏ‹ş/Hî1RMAJORZ
+CODE_SMELL
+]
+java:S1068"*Remove this unused "LOGGER" private field.(¾õ¶ü8Ò™õîƒ0Hï1RMAJORZ
+CODE_SMELL
+w
+java:S2095'"DUse try-with-resources or close this "Stream" in a "finally" clause.(óÒ³½úÿÿÿÿ8ÈèÏ‹ş/Hñ1RBLOCKERZBUG
+d
+java:S1135"2Complete the task associated to this TODO comment.(‡ñÅ¼8ÈèÏ‹ş/Hò1RINFOZ
+CODE_SMELL
